@@ -26,20 +26,21 @@ def plot_alcohol_color(df):
 	plt.title('Alcohol and Color Intensity in Certain Wines')
 	plt.ylabel('Color Intensity')
 	plt.xlabel('Alcohol')
-	plt.show()
 	plt.savefig('plots/Alcohol_vs_Color.png')
+	plt.show()
 
 def plot_dists(df):
 	sns.displot(data = df, x='alcohol', hue='class', kind='kde', alpha = 0.3, fill = True)
-	plt.show()
 	plt.savefig('plots/distplot_comparison.png')
+	plt.show()
 
 
 def plot_2d_kde(df):
 	sns.displot(data=df, x='alcohol', y='color_intensity', 
 				hue='class', kind='kde', rug = True, alpha=0.5)
-	plt.show()
 	plt.savefig('plots/2dkde.png')
+	plt.show()
+
 
 
 
