@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.datasets import load_wine
+import sys
 
 def main():
 	wine = load_wine()
@@ -45,4 +46,5 @@ def plot_2d_kde(df):
 
 
 if __name__ == '__main__':
+	print(repr(sys.argv[0]))
 	main()
